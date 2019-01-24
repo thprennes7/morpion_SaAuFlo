@@ -1,4 +1,5 @@
 require 'bundler'
+system("bundle install --quiet")
 Bundler.require
 $:.unshift File.expand_path('./../lib', __FILE__)
 
@@ -8,4 +9,6 @@ require 'app/morpion.rb'
 require 'views/index.rb'
 require 'views/board.rb'
 
-rooter = Rooter.new.perform
+rooter = Rooter.new
+rooter.perform
+rooter.end_game

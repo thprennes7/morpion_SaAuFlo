@@ -22,7 +22,9 @@ class Controller
           @index.wrong
         end
         @morpion.player_choice(choice, player_item)
-        x = check_end(player)
+        if (x = check_end(player)) == 1 
+            break
+        end
         player_item = "o"
       end
     end

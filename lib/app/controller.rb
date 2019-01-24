@@ -34,12 +34,10 @@ class Controller
       @index.win(player)
       @board.show(@morpion)
       return 1
-      break
     when 2 
       @index.draw
       @board.show(@morpion)
       return 1
-      break
     else 
       return 0
     end

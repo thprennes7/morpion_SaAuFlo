@@ -11,4 +11,7 @@ require 'views/board.rb'
 
 rooter = Rooter.new
 rooter.perform
-rooter.end_game
+
+#Boucle permettant de rejouer plusieurs fois
+while rooter.end_game == true
+end

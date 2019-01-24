@@ -4,7 +4,7 @@ class Board
   end
 
   def show(morpion)
-
+    # Méthode qui nous affiche le tableau en prenant les valeur de notre objet morpion
     puts "    1   2   3"
     puts "   - - - - - -"
     puts "A | #{morpion.a1} | #{morpion.a2} | #{morpion.a3} |"

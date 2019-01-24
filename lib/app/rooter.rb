@@ -1,0 +1,2 @@
+class Rooter
+end

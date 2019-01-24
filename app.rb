@@ -8,4 +8,6 @@ require 'app/morpion.rb'
 require 'views/index.rb'
 require 'views/board.rb'
 
-rooter = Rooter.new.perform
+rooter = Rooter.new
+rooter.perform
+rooter.end_game

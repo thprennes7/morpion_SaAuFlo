@@ -19,7 +19,7 @@ class Index
   def win(player)
     # Méthode annonçant la victoire du joueur
     system("clear")
-    puts "Félicitations #{player} tu as gagné !"
+    puts "Félicitations #{player} tu as gagné #{Emoji.find_by_alias("tada").raw}!"
   end
 
   def draw

@@ -1,4 +1,5 @@
 require 'bundler'
+system("bundle install --quiet")
 Bundler.require
 $:.unshift File.expand_path('./../lib', __FILE__)
 

@@ -15,10 +15,5 @@ class Rooter
     @controller.new_game(player_1, player_2)
   end
 
-  def 
-    prompt = TTY::Prompt.new
-
-    prompt.select("")
-  end
 
 end

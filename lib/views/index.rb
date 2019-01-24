@@ -13,4 +13,15 @@ class Index
     puts "Vous avez entré une case erroné ou déjà pris"
     puts "Recommencez !"
   end
+
+  def win(player)
+    system("clear")
+    puts "Félicitations #{player} tu as gagné !"
+  end
+
+  def draw
+    system("clear")
+    puts "Égalité"
+  end
+
 end

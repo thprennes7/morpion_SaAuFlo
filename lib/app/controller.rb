@@ -18,7 +18,7 @@ class Controller
     x = 0
     # Boucle qui permet de faire tourner le jeu tant qu'il n'y a pas eu d'égalité ou de victoire
     while x == 0
-      player_item = 'x'
+      player_item = Emoji.find_by_alias("x").raw
 
       # Boucle qui altèrne entre les deux joueurs
       @players.each do |player|
@@ -42,7 +42,7 @@ class Controller
         end
 
         # Permet de changer le 'joueur'
-        player_item = 'o'
+        player_item = Emoji.find_by_alias("o").raw
       end
     end
   end
